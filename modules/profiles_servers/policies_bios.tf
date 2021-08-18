@@ -239,6 +239,38 @@ module "policies_bios_oltp" {
     module.ucs_server_profiles[s].moid
     if local.ucs_server_profiles[s].profile.policies_bios == each.key
   ]
+        #+++++++++++++++++++++++++++++++
+  # Boot Options Section
+  #+++++++++++++++++++++++++++++++
+  
+  #+++++++++++++++++++++++++++++++
+  # Intel Directed IO Section
+  #+++++++++++++++++++++++++++++++
+  
+  #+++++++++++++++++++++++++++++++
+  # LOM and PCIe Slots Section
+  #+++++++++++++++++++++++++++++++
+
+  #+++++++++++++++++++++++++++++++
+  # Memory Section
+  #+++++++++++++++++++++++++++++++
+
+  #+++++++++++++++++++++++++++++++
+  # PCI Section
+  #+++++++++++++++++++++++++++++++
+
+  #+++++++++++++++++++++++++++++++
+  # Processor Section
+  #+++++++++++++++++++++++++++++++
+  
+  #+++++++++++++++++++++++++++++++
+  # Server Management Section
+  #+++++++++++++++++++++++++++++++
+  
+  #+++++++++++++++++++++++++++++++
+  # Trusted Platform Section
+  #+++++++++++++++++++++++++++++++
+
 }
 
 module "policies_bios_virtual_node" {
